@@ -36,15 +36,6 @@ a:visited {
   opacity: 0;
 }
 
-.modal {
-  background-color: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .header__mobile-view {
   background-color: white;
   display: flex;
@@ -68,12 +59,86 @@ a:visited {
   border-radius: 10px;
   width: 300px;
   text-align: center;
+  z-index: 2;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 .header__menu .menu__list {
   padding-top: 20px;
 }
 .header__menu .menu__list:last-child {
   padding-bottom: 20px;
+}
+
+.header__btn {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header__mobile-view .mobile__hamburger {
+    display: none;
+  }
+  .header__menu {
+    margin-top: -5px;
+  }
+  .header__menu .menu {
+    width: 400px;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0;
+  }
+  .header__menu .menu__list {
+    padding-top: 0;
+  }
+  .header__menu .menu__list:last-child {
+    padding-bottom: 0;
+  }
+
+  .menu__link {
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+  .menu__link:visited {
+    color: #9698a6;
+  }
+
+  .header__btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.principal {
+  background-color: red;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+
+.btn {
+  background: #31d35c;
+  background: linear-gradient(157deg, #31d35c 27%, #2bb7da 84%);
+  font-size: 1.4rem;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.btn a {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

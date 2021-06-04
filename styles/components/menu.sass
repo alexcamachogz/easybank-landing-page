@@ -21,7 +21,49 @@
       border-radius: 10px
       width: 300px
       text-align: center
+      z-index: 2
+      transition: visibility 0s, opacity .3s linear
       &__list
         padding-top: 20px
         &:last-child
           padding-bottom: 20px
+
+.header__btn
+  visibility: hidden
+  opacity: 0
+
+@media screen and (min-width: 900px)
+  .header
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 80px
+    width: 80%
+    margin: 0 auto
+    &__mobile-view
+      .mobile__hamburger
+        display: none
+    &__menu
+      margin-top: -5px
+      .menu
+        width: 400px
+        visibility: visible
+        opacity: 1
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border-radius: 0
+        &__list
+          padding-top: 0
+          &:last-child
+            padding-bottom: 0
+
+  .menu__link
+    font-weight: 300
+    font-size: 1.4rem
+    &:visited
+      color: color.$grayish-blue
+
+  .header__btn
+    visibility: visible
+    opacity: 1
