@@ -54,7 +54,12 @@
         align-items: center
         border-radius: 0
         &__list
+          line-height: 80px
+          height: 80px
           padding-top: 0
+          &:hover
+            border-bottom: 4px solid transparent
+            border-image: linear-gradient(to right, color.$lime-green 27%, color.$bright-cyan 84%) 1
           &:last-child
             padding-bottom: 0
 
