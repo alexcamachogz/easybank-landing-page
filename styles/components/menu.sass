@@ -1,0 +1,27 @@
+@use '../base/colors' as color
+
+.header
+  &__mobile-view
+    background-color: color.$white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 70px
+    padding: 0 25px
+    .mobile__hamburger
+      position: relative
+      top: -5px
+  &__menu
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    .menu
+      background-color: color.$white
+      border-radius: 10px
+      width: 300px
+      text-align: center
+      &__list
+        padding-top: 20px
+        &:last-child
+          padding-bottom: 20px

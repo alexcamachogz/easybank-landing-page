@@ -1,6 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: black;
-  color: aliceblue;
+  background-color: white;
+  color: #2d314d;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #2d314d;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-show {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header__mobile-view {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 25px;
+}
+.header__mobile-view .mobile__hamburger {
+  position: relative;
+  top: -5px;
+}
+.header__menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.header__menu .menu {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+.header__menu .menu__list {
+  padding-top: 20px;
+}
+.header__menu .menu__list:last-child {
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

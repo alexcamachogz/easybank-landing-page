@@ -1,0 +1,38 @@
+@use './colors' as color
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  font-size: 62.5%
+
+body
+  background-color: color.$white
+  color: color.$dark-blue
+  font-family: 'Public Sans', sans-serif
+  font-size: 1.8rem
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+  &:visited
+    color: color.$dark-blue
+
+.hidden
+  display: none
+
+.no-show
+  visibility: hidden
+  opacity: 0
+
+.modal
+  background-color: rgba(0,0,0,.3)
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
