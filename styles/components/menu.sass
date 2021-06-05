@@ -1,6 +1,7 @@
 @use '../base/colors' as color
 
 .header
+  background-color: color.$white
   &__mobile-view
     background-color: color.$white
     display: flex
@@ -21,7 +22,8 @@
       border-radius: 10px
       width: 300px
       text-align: center
-      z-index: 2
+      z-index: 5
+      box-shadow: 0 30px 200px 50px
       transition: visibility 0s, opacity .3s linear
       &__list
         padding-top: 20px
@@ -44,8 +46,9 @@
       .mobile__hamburger
         display: none
     &__menu
-      margin-top: -5px
+      margin-top: -10px
       .menu
+        height: 70px
         width: 400px
         visibility: visible
         opacity: 1
@@ -53,9 +56,10 @@
         justify-content: space-around
         align-items: center
         border-radius: 0
+        box-shadow: 0 0 0 0
         &__list
-          line-height: 80px
-          height: 80px
+          line-height: 70px
+          height: 70px
           padding-top: 0
           &:hover
             border-bottom: 4px solid transparent
