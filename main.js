@@ -1,10 +1,12 @@
-const mobile__hamburger = document.querySelector('.mobile__hamburger')
-const mobile__close = document.querySelector('.mobile__close')
-const header__mobile = document.querySelector('.header__mobile')
+const mobileHamburger = document.querySelector('.mobile__hamburger')
+const mobileClose = document.querySelector('.mobile__close')
+const headerMobile = document.querySelector('.header__mobile')
 const menu = document.querySelector('.menu')
+const menuContainer = document.querySelector('.menu__container')
 
-header__mobile.addEventListener( 'click', () => {
-  mobile__hamburger.classList.toggle('hidden')
-  mobile__close.classList.toggle('hidden')
+headerMobile.addEventListener( 'click', () => {
+  mobileHamburger.classList.toggle('hidden')
+  mobileClose.classList.toggle('hidden')
   menu.classList.toggle('no-show')
+  menuContainer.classList.toggle('opacity-background')
 })
