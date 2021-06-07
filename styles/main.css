@@ -376,6 +376,24 @@ a:visited {
   font-weight: 300;
 }
 
+@media screen and (min-width: 1440px) {
+  .articles > * {
+    width: 80%;
+  }
+  .articles__title {
+    text-align: left;
+  }
+  .articles__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .articles .card {
+    width: 350px;
+  }
+  .articles .card__image {
+    height: 250px;
+  }
+}
 .container {
   position: absolute;
   height: 100vh;
