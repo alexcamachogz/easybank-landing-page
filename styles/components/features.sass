@@ -1,0 +1,67 @@
+@use '../base/colors' as color
+
+.features
+  padding-top: 70px
+  padding-bottom: 70px
+  background-color: color.$light-grayish-blue
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__header
+    color: color.$dark-blue
+    text-align: center
+    margin-bottom: 70px
+    width: 80%
+    .header__title
+      font-size: 3rem
+      font-weight: 300
+      margin-bottom: 20px
+    .header__paragraph
+      color: color.$grayish-blue
+      font-size: 1.4rem
+      font-weight: 300
+      line-height: 2.3rem
+  &__options
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    .options
+      width: 80%
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 20px
+      &__title
+        color: color.$dark-blue
+        font-weight: 300
+        font-size: 2rem
+      &__paragraph
+        color: color.$grayish-blue
+        font-size: 1.4rem
+        font-weight: 300
+        line-height: 2.3rem
+        text-align: center
+
+@media screen and (min-width: 1440px)
+  .features
+    flex-direction: column
+    align-items: center
+    &__header
+      text-align: left
+      .header__title
+        font-size: 4rem
+      .header__paragraph
+        width: 550px
+        font-size: 1.6rem
+        line-height: 2.5rem
+    &__options
+      flex-direction: row
+      width: 80%
+      gap: 30px
+      .options
+        align-items: flex-start
+        &__paragraph
+          width: 300px
+          text-align: left
+          font-size: 1.6rem

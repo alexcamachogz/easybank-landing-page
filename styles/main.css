@@ -92,7 +92,7 @@ a:visited {
 @media screen and (min-width: 900px) {
   .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     width: 80%;
@@ -175,6 +175,14 @@ a:visited {
   font-weight: 300;
   text-align: center;
 }
+.banking__content .content__btn .btn--left {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  color: white;
+  margin: 0 auto;
+}
 
 .desktop {
   display: none;
@@ -204,7 +212,7 @@ a:visited {
   .banking__content {
     margin-top: 0;
     grid-area: banking__content;
-    width: 450px;
+    width: 550px;
     height: 350px;
     justify-content: center;
     justify-self: center;
@@ -212,7 +220,7 @@ a:visited {
   }
   .banking__content > * {
     width: 350px;
-    align-self: flex-end;
+    align-self: flex-start;
   }
   .banking__content .content__title {
     text-align: left;
@@ -225,8 +233,7 @@ a:visited {
   }
   .banking__content .content__btn .btn--left {
     width: 150px;
-    display: block;
-    color: white;
+    margin: 0;
   }
 
   .mobile {
@@ -235,6 +242,87 @@ a:visited {
 
   .desktop {
     display: block;
+  }
+}
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features__header {
+  color: #2d314d;
+  text-align: center;
+  margin-bottom: 70px;
+  width: 80%;
+}
+.features__header .header__title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.features__header .header__paragraph {
+  color: #9698a6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+.features__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.features__options .options {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.features__options .options__title {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.features__options .options__paragraph {
+  color: #9698a6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__header {
+    text-align: left;
+  }
+  .features__header .header__title {
+    font-size: 4rem;
+  }
+  .features__header .header__paragraph {
+    width: 550px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .features__options {
+    flex-direction: row;
+    width: 80%;
+    gap: 30px;
+  }
+  .features__options .options {
+    align-items: flex-start;
+  }
+  .features__options .options__paragraph {
+    width: 300px;
+    text-align: left;
+    font-size: 1.6rem;
   }
 }
 .container {
