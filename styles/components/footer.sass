@@ -1,0 +1,57 @@
+@use '../base/colors' as color
+
+.footer
+  background-color: color.$dark-blue
+  padding-top: 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+  > *
+    width: 80%
+  &__logo
+    display: flex
+    justify-content: center
+    margin-bottom: 40px
+  &__redes
+    display: flex
+    justify-content: center
+    gap: 25px
+    margin-bottom: 40px
+    svg:hover
+      path
+        fill: color.$lime-green
+  &__navigation
+    .link-1,
+    .link-2
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-size: 1.5rem
+      font-weight: 100
+      gap: 30px
+      margin-bottom: 30px
+    .navigation__link
+      color: color.$white
+      &:hover
+        color: color.$lime-green
+  &__invite
+    color: color.$grayish-blue
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    p
+      font-size: 1.4rem
+      font-weight: 300
+      margin-bottom: 40px
+
+@media screen and (min-width: 1440px)
+  .footer
+    flex-direction: row
+    align-items: center
+    &__navigation
+      display: flex
+      justify-content: space-around
+      .link-1,
+      .link-2
+        align-items: flex-start
