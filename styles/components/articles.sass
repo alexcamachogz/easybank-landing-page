@@ -1,0 +1,41 @@
+@use '../base/colors' as color
+
+.articles
+  background-color: color.$very-light-gray
+  padding: 70px 0
+  > *
+    width: 300px
+    margin: 0 auto
+  &__title
+    color: color.$dark-blue
+    font-size: 3rem
+    font-weight: 300
+    text-align: center
+    margin-bottom: 30px
+  .card
+    margin-bottom: 25px
+    border-radius: 10px
+    background-color: color.$white
+    &__image
+      width: 100%
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+    &__content
+      width: 90%
+      margin: 20px auto 0 auto
+      padding-bottom: 25px
+    &__author
+      color: color.$grayish-blue
+      font-weight: 300
+      font-size: 1rem
+      margin-bottom: 10px
+    &__title
+      color: color.$dark-blue
+      font-weight: 400
+      font-size: 1.6rem
+      margin-bottom: 10px
+    &__text
+      color: color.$grayish-blue
+      font-size: 1.3rem
+      line-height: 1.8rem
+      font-weight: 300
