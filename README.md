@@ -9,7 +9,7 @@
 This is a landing page created with [Frontend Mentor resources](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). The landing page has different sections, these sections was made with Flexbox and CSS Grid, also it has a desktop and mobile version.
 As an additional feature I created and responsive hamburger menu with animations.
 
-You can see it here → [Easybank Landing Page](http://easybank.alexcamachogz.com/).
+You can see it here → [Easybank Landing Page](https://easybank-landing-page-tau-umber.vercel.app/#).
 
 ## Table of contents
 
